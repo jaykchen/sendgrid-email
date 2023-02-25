@@ -1,0 +1,14 @@
+[package]
+name = "sendgrid-email"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/sendgrid-email.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+slack-flows = "0.2.5"
+tokio_wasi = { version = "1.25.1", features = ["macros", "rt"] }
+anyhow = "1"
+sendgrid-flows = "0.1.1"
